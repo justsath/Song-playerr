@@ -1,0 +1,110 @@
+/* Body styling for a dark gradient background */
+body {
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Form container */
+form {
+    background: rgba(50, 50, 70, 0.8);
+    border-radius: 15px;
+    padding: 30px;
+    width: 400px;
+    box-shadow: 0px 4px 15px rgba(0, 255, 255, 0.4), 0px 0px 40px rgba(255, 0, 255, 0.2);
+    text-align: center;
+}
+
+    /* Form labels */
+    form div label {
+        display: block;
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+        color: #ff00ff;
+    }
+
+    /* 3D Textboxes */
+    form div input[type="text"],
+    form div input[type="password"] {
+        width: 90%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 10px;
+        background: linear-gradient(145deg, #1c1c1c, #2a2a2a);
+        color: #00ffff;
+        box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.8), inset -5px -5px 10px rgba(255, 255, 255, 0.1);
+        font-size: 1rem;
+        outline: none;
+        transition: all 0.3s ease-in-out;
+    }
+
+        form div input[type="text"]:focus,
+        form div input[type="password"]:focus {
+            background: linear-gradient(145deg, #2a2a2a, #1c1c1c);
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.6), 0 0 40px rgba(255, 0, 255, 0.2);
+        }
+
+/* Checkbox styling */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox {
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    appearance: none;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(145deg, #1c1c1c, #2a2a2a);
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5), inset -2px -2px 5px rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+    .checkbox:checked {
+        background: linear-gradient(145deg, #00ffff, #00cccc);
+        box-shadow: inset 2px 2px 5px rgba(0, 255, 255, 0.8), inset -2px -2px 5px rgba(255, 255, 255, 0.2);
+    }
+
+    .checkbox + span {
+        color: #fff;
+        font-size: 1rem;
+        text-shadow: 1px 1px 5px rgba(0, 255, 255, 0.6), 0 0 10px rgba(255, 0, 255, 0.6);
+        font-weight: bold;
+    }
+
+/* Button styling with animations */
+form div .button {
+    background: linear-gradient(45deg, #ff00ff, #00ffff);
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: inline-block;
+}
+
+    form div .button:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.8), 0px 0px 20px rgba(0, 255, 255, 0.8);
+    }
+
+form h1 {
+    font-size: 2rem;
+    color: #ff00ff;
+    text-shadow: 0px 0px 10px rgba(255, 0, 255, 0.8), 0px 0px 20px rgba(0, 255, 255, 0.8);
+    margin-bottom: 20px;
+}
